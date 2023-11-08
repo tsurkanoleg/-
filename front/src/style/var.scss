@@ -1,0 +1,29 @@
+$colorMap: (
+  main: #f46f17,
+  // dark: #121212,
+  gray: #363636,
+  light: #888888,
+  box: #f7f7f7,
+  red: #fb6061,
+  green: #65cc3d,
+  blue: #2f80ed,
+  // background: #fff,
+  // white: #fff,
+  divider: #e6e6e6,
+
+  gray-border: #e9e8eb purple: #775ce5,
+  dark: #121212,
+  gray: #939199,
+  dark-light: #1d1d1f,
+  background: #fff,
+  white: #fff,
+
+  warning: rgba(242, 136, 61, 0.1),
+  warning-text: #f2883d,
+
+  field-alert: #f23152,
+);
+
+@function color($key) {
+  @return map-get($colorMap, $key);
+}
